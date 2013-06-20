@@ -1,0 +1,1071 @@
+
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-04-24 11:19:49) [GET]
+  [4;36;1mAlbum Load (16.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 500ms (View: 453, DB: 16) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2011-04-24 11:19:53) [GET]
+  [4;36;1mCollection Load (47.0ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+  [4;35;1mCollection Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `collections`[0m
+Completed in 172ms (View: 94, DB: 47) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2011-04-24 11:19:53) [GET]
+  [4;36;1mCollection Load (0.0ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+  [4;35;1mCollection Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `collections`[0m
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2011-04-24 11:21:18) [GET]
+  [4;36;1mCollection Load (0.0ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+  [4;35;1mCollection Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `collections`[0m
+Completed in 63ms (View: 32, DB: 0) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2011-04-24 11:22:18) [GET]
+  [4;36;1mCollection Load (0.0ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+  [4;35;1mCollection Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `collections`[0m
+Completed in 172ms (View: 93, DB: 0) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2011-04-24 11:22:21) [GET]
+  [4;36;1mLogin Columns (32.0ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 109ms (View: 46, DB: 48) | 200 OK [http://localhost/logins/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2011-04-24 11:22:29) [POST]
+  Parameters: {"authenticity_token"=>"rvF4SSqF511IIoaw4LYn0x1DcF02id1pJOjZUOaVd/0=", "userform"=>{"password"=>"12374", "email"=>"pravinmishra88@gmail.com"}}
+  [4;35;1mSignup Columns (47.0ms)[0m   [0mSHOW FIELDS FROM `signups`[0m
+  [4;36;1mSignup Load (16.0ms)[0m   [0;1mSELECT * FROM `signups` WHERE (email = 'pravinmishra88@gmail.com' and password = '12374') LIMIT 1[0m
+Redirected to http://localhost:3000/logins/new/again
+Completed in 109ms (DB: 63) | 302 Found [http://localhost/logins]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2011-04-24 11:22:29) [GET]
+  Parameters: {"id"=>"again"}
+  [4;35;1mLogin Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 31ms (View: 15, DB: 0) | 200 OK [http://localhost/logins/new/again]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2011-04-24 11:22:38) [POST]
+  Parameters: {"authenticity_token"=>"rvF4SSqF511IIoaw4LYn0x1DcF02id1pJOjZUOaVd/0=", "userform"=>{"password"=>"1234", "email"=>"pravinmishra88@gmail.com"}}
+  [4;36;1mSignup Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `signups`[0m
+  [4;35;1mSignup Load (0.0ms)[0m   [0mSELECT * FROM `signups` WHERE (email = 'pravinmishra88@gmail.com' and password = '1234') LIMIT 1[0m
+Redirected to http://localhost:3000/albums
+Completed in 63ms (DB: 15) | 302 Found [http://localhost/logins]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-04-24 11:22:38) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2011-04-24 11:22:41) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAlbum Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.0ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+Rendering template within layouts/logins
+Rendering albums/show
+  [4;36;1mImage Load (32.0ms)[0m   [0;1mSELECT * FROM `images` WHERE (`images`.album_id = 6) [0m
+  [4;35;1mImage Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Completed in 172ms (View: 109, DB: 47) | 200 OK [http://localhost/albums/6]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-04-24 11:22:43) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 78ms (View: 31, DB: 16) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2011-04-24 11:22:45) [GET]
+  Parameters: {"id"=>"7"}
+  [4;36;1mAlbum Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.0ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 7) [0m
+Rendering template within layouts/logins
+Rendering albums/show
+  [4;36;1mImage Load (0.0ms)[0m   [0;1mSELECT * FROM `images` WHERE (`images`.album_id = 7) [0m
+  [4;35;1mImage Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Completed in 78ms (View: 63, DB: 0) | 200 OK [http://localhost/albums/7]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-04-24 11:22:48) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 110ms (View: 79, DB: 0) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-04-24 11:22:48) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 78ms (View: 31, DB: 16) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2011-04-24 11:22:50) [GET]
+  Parameters: {"id"=>"8"}
+  [4;36;1mAlbum Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (0.0ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 8) [0m
+Rendering template within layouts/logins
+Rendering albums/show
+  [4;36;1mImage Load (0.0ms)[0m   [0;1mSELECT * FROM `images` WHERE (`images`.album_id = 8) [0m
+  [4;35;1mImage Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Completed in 78ms (View: 31, DB: 16) | 200 OK [http://localhost/albums/8]
+  [4;36;1mSQL (31.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (63.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-05-04 10:59:02) [GET]
+  [4;36;1mAlbum Load (828.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (110.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 1766ms (View: 797, DB: 1032) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2011-05-04 10:59:10) [GET]
+  [4;36;1mAlbum Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;35;1mImage Columns (94.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Rendered albums/_image (0.0ms)
+Completed in 328ms (View: 171, DB: 110) | 200 OK [http://localhost/albums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#create (for 127.0.0.1 at 2011-05-04 10:59:16) [POST]
+  Parameters: {"commit"=>"Create New Album", "authenticity_token"=>"v+IyEXBkN7gOPPddytJ4aNBzTOTyU2WFiulEoJzHfsg=", "album"=>{"name"=>"", "user"=>"", "description"=>""}}
+  [4;36;1mAlbum Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (15.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;35;1mImage Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Rendered albums/_image (0.0ms)
+Completed in 281ms (View: 94, DB: 30) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-05-04 10:59:19) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 94ms (View: 47, DB: 16) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#edit (for 127.0.0.1 at 2011-05-04 10:59:33) [GET]
+  Parameters: {"id"=>"6"}
+  [4;36;1mAlbum Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mAlbum Load (63.0ms)[0m   [0mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+Rendering template within layouts/logins
+Rendering albums/edit
+  [4;36;1mImage Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `images`[0m
+  [4;35;1mImage Load (15.0ms)[0m   [0mSELECT * FROM `images` WHERE (`images`.album_id = 6) [0m
+Rendered albums/_image (0.0ms)
+Completed in 219ms (View: 94, DB: 78) | 200 OK [http://localhost/albums/6/edit]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-05-04 11:00:24) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2011-05-04 11:00:29) [GET]
+  [4;36;1mLogin Columns (157.0ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 453ms (View: 281, DB: 157) | 200 OK [http://localhost/logins/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2011-05-04 11:00:43) [POST]
+  Parameters: {"authenticity_token"=>"v+IyEXBkN7gOPPddytJ4aNBzTOTyU2WFiulEoJzHfsg=", "userform"=>{"password"=>"ankit", "email"=>"ankit@gmail.com"}}
+  [4;35;1mSignup Columns (219.0ms)[0m   [0mSHOW FIELDS FROM `signups`[0m
+  [4;36;1mSignup Load (15.0ms)[0m   [0;1mSELECT * FROM `signups` WHERE (email = 'ankit@gmail.com' and password = 'ankit') LIMIT 1[0m
+Redirected to http://localhost:3000/logins/new/again
+Completed in 265ms (DB: 234) | 302 Found [http://localhost/logins]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2011-05-04 11:00:43) [GET]
+  Parameters: {"id"=>"again"}
+  [4;35;1mLogin Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/logins/new/again]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2011-05-04 11:00:57) [POST]
+  Parameters: {"authenticity_token"=>"v+IyEXBkN7gOPPddytJ4aNBzTOTyU2WFiulEoJzHfsg=", "userform"=>{"password"=>"pravin", "email"=>"pravinmishra88@gmail.com"}}
+  [4;36;1mSignup Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `signups`[0m
+  [4;35;1mSignup Load (0.0ms)[0m   [0mSELECT * FROM `signups` WHERE (email = 'pravinmishra88@gmail.com' and password = 'pravin') LIMIT 1[0m
+Redirected to http://localhost:3000/logins/new/again
+Completed in 47ms (DB: 16) | 302 Found [http://localhost/logins]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2011-05-04 11:00:57) [GET]
+  Parameters: {"id"=>"again"}
+  [4;36;1mLogin Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 47ms (View: 16, DB: 15) | 200 OK [http://localhost/logins/new/again]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2011-05-04 11:01:05) [POST]
+  Parameters: {"authenticity_token"=>"v+IyEXBkN7gOPPddytJ4aNBzTOTyU2WFiulEoJzHfsg=", "userform"=>{"password"=>"1234", "email"=>"pravinmishra88@gmail.com"}}
+  [4;35;1mSignup Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `signups`[0m
+  [4;36;1mSignup Load (0.0ms)[0m   [0;1mSELECT * FROM `signups` WHERE (email = 'pravinmishra88@gmail.com' and password = '1234') LIMIT 1[0m
+Redirected to http://localhost:3000/albums
+Completed in 62ms (DB: 16) | 302 Found [http://localhost/logins]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-05-04 11:01:05) [GET]
+  [4;35;1mAlbum Load (0.0ms)[0m   [0mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;36;1mAlbum Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Completed in 63ms (View: 47, DB: 0) | 200 OK [http://localhost/albums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2011-05-04 11:01:12) [GET]
+  [4;35;1mAlbum Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;36;1mImage Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `images`[0m
+Rendered albums/_image (15.0ms)
+Completed in 203ms (View: 140, DB: 32) | 200 OK [http://localhost/albums/new]
+  [4;36;1mSQL (109.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (62.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-05-04 14:49:36) [GET]
+  [4;36;1mAlbum Load (235.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (110.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 672ms (View: 297, DB: 516) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2011-05-04 14:49:41) [GET]
+  [4;36;1mAlbum Columns (15.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;35;1mImage Columns (78.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Rendered albums/_image (16.0ms)
+Completed in 313ms (View: 188, DB: 93) | 200 OK [http://localhost/albums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2011-05-04 15:10:55) [GET]
+  [4;36;1mCollection Load (110.0ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+  [4;35;1mCollection Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `collections`[0m
+Completed in 3141ms (View: 2578, DB: 110) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2011-05-04 15:11:09) [GET]
+  [4;36;1mLogin Columns (93.0ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 188ms (View: 63, DB: 109) | 200 OK [http://localhost/logins/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2011-05-04 15:11:21) [POST]
+  Parameters: {"authenticity_token"=>"v+IyEXBkN7gOPPddytJ4aNBzTOTyU2WFiulEoJzHfsg=", "userform"=>{"password"=>"1234", "email"=>"pravinmishra88@gmail.com"}}
+  [4;35;1mSignup Columns (63.0ms)[0m   [0mSHOW FIELDS FROM `signups`[0m
+  [4;36;1mSignup Load (203.0ms)[0m   [0;1mSELECT * FROM `signups` WHERE (email = 'pravinmishra88@gmail.com' and password = '1234') LIMIT 1[0m
+Redirected to http://localhost:3000/albums
+Completed in 344ms (DB: 266) | 302 Found [http://localhost/logins]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-05-04 15:11:21) [GET]
+  [4;35;1mAlbum Load (31.0ms)[0m   [0mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;36;1mAlbum Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Completed in 110ms (View: 31, DB: 63) | 200 OK [http://localhost/albums]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#show (for 127.0.0.1 at 2011-05-04 15:11:35) [GET]
+  Parameters: {"id"=>"6"}
+  [4;35;1mAlbum Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+  [4;36;1mAlbum Load (31.0ms)[0m   [0;1mSELECT * FROM `albums` WHERE (`albums`.`id` = 6) [0m
+Rendering template within layouts/logins
+Rendering albums/show
+  [4;35;1mImage Load (31.0ms)[0m   [0mSELECT * FROM `images` WHERE (`images`.album_id = 6) [0m
+  [4;36;1mImage Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `images`[0m
+Completed in 390ms (View: 265, DB: 94) | 200 OK [http://localhost/albums/6]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2011-05-04 15:11:36) [GET]
+  Parameters: {"1303464516"=>nil}
+
+ActionController::RoutingError (No route matches "/system/datas/10/original/08022009602.jpg" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-06-01 09:49:53) [GET]
+  [4;36;1mAlbum Load (63.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 625ms (View: 515, DB: 79) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2011-06-01 09:50:01) [GET]
+  [4;36;1mAlbum Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;35;1mImage Columns (46.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Rendered albums/_image (0.0ms)
+Completed in 265ms (View: 188, DB: 62) | 200 OK [http://localhost/albums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-06-01 09:50:07) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-06-01 09:50:07) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2011-06-01 09:52:14) [GET]
+  [4;36;1mAlbum Load (0.0ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+  [4;35;1mAlbum Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2011-06-01 09:52:16) [GET]
+  [4;36;1mAlbum Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;35;1mImage Columns (16.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Rendered albums/_image (16.0ms)
+Completed in 187ms (View: 109, DB: 16) | 200 OK [http://localhost/albums/new]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2011-06-01 09:52:17) [GET]
+  [4;36;1mAlbum Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;35;1mImage Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+Rendered albums/_image (0.0ms)
+Completed in 203ms (View: 141, DB: 0) | 200 OK [http://localhost/albums/new]
+  [4;36;1mSQL (16.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2011-06-01 09:52:20) [GET]
+Rendering template within layouts/logins
+Rendering page/about
+Completed in 47ms (View: 47, DB: 16) | 200 OK [http://localhost/page/about]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2011-06-01 09:52:22) [GET]
+  [4;36;1mLogin Columns (63.0ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 172ms (View: 62, DB: 63) | 200 OK [http://localhost/logins/new]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2011-06-01 09:52:24) [GET]
+  [4;35;1mCollection Load (47.0ms)[0m   [0mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+  [4;36;1mCollection Columns (16.0ms)[0m   [0;1mSHOW FIELDS FROM `collections`[0m
+Completed in 156ms (View: 62, DB: 63) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2011-06-01 09:53:47) [GET]
+  [4;36;1mCollection Load (0.0ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+  [4;35;1mCollection Columns (15.0ms)[0m   [0mSHOW FIELDS FROM `collections`[0m
+Completed in 93ms (View: 63, DB: 15) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (77.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (293.7ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW KEYS FROM `schema_migrations`[0m
+  [4;35;1mSQL (379.0ms)[0m   [0mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSignups (20110417064754)
+  [4;36;1mSQL (205.6ms)[0m   [0;1mCREATE TABLE `signups` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `email` varchar(255), `password` varchar(255), `confirm_password` varchar(255), `phone` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (88.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110417064754')[0m
+Migrating to CreateLogins (20110419015829)
+  [4;36;1mSQL (197.8ms)[0m   [0;1mCREATE TABLE `logins` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(255), `password` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (88.3ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110419015829')[0m
+Migrating to CreateCollections (20110419022402)
+  [4;36;1mSQL (197.7ms)[0m   [0;1mCREATE TABLE `collections` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `image` varchar(255), `description` varchar(255), `upload_at` date, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (88.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110419022402')[0m
+Migrating to CreateDataFiles (20110419051439)
+  [4;36;1mSQL (186.7ms)[0m   [0;1mCREATE TABLE `data_files` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (88.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110419051439')[0m
+Migrating to CreateUploads (20110419053129)
+  [4;36;1mSQL (220.0ms)[0m   [0;1mCREATE TABLE `uploads` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (99.5ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110419053129')[0m
+Migrating to CreatePhotos (20110419101819)
+  [4;36;1mSQL (186.6ms)[0m   [0;1mCREATE TABLE `photos` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `description` varchar(255), `content_type` varchar(255), `filename` varchar(255), `binary_data` blob, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (88.2ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110419101819')[0m
+Migrating to CreateAlbums (20110422080544)
+  [4;36;1mSQL (164.5ms)[0m   [0;1mCREATE TABLE `albums` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `description` varchar(255), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (55.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110422080544')[0m
+Migrating to CreateImages (20110422080647)
+  [4;36;1mSQL (142.3ms)[0m   [0;1mCREATE TABLE `images` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `album_id` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (44.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20110422080647')[0m
+Migrating to AddAttachmentsDataToImage (20110422081444)
+  [4;36;1mSQL (355.4ms)[0m   [0;1mALTER TABLE `images` ADD `data_file_name` varchar(255)[0m
+  [4;35;1mSQL (324.0ms)[0m   [0mALTER TABLE `images` ADD `data_content_type` varchar(255)[0m
+  [4;36;1mSQL (333.8ms)[0m   [0;1mALTER TABLE `images` ADD `data_file_size` int(11)[0m
+  [4;35;1mSQL (344.9ms)[0m   [0mALTER TABLE `images` ADD `data_updated_at` datetime[0m
+  [4;36;1mSQL (55.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110422081444')[0m
+Migrating to AddTagToImage (20110422095612)
+  [4;35;1mSQL (343.3ms)[0m   [0mALTER TABLE `images` ADD `tag` varchar(255)[0m
+  [4;36;1mSQL (55.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110422095612')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (2.4ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `albums`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `albums`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `collections`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `collections`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `collections`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `data_files`[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mdescribe `data_files`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `data_files`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `images`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `images`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mdescribe `logins`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `logins`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mSHOW FIELDS FROM `photos`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `photos`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `photos`[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSHOW FIELDS FROM `signups`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `signups`[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW KEYS FROM `signups`[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mSHOW FIELDS FROM `uploads`[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mdescribe `uploads`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `uploads`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-05-20 13:04:12) [GET]
+
+ActionController::RoutingError (No route matches "/album" with {:method=>:get}):
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 13:36:17) [GET]
+  [4;36;1mCollection Load (0.4ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-05-20 13:36:25) [GET]
+
+ActionController::RoutingError (No route matches "/stories" with {:method=>:get}):
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2013-05-20 13:36:29) [GET]
+
+ActionController::RoutingError (No route matches "/stories" with {:method=>:get}):
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 13:36:36) [GET]
+  [4;35;1mCollection Load (0.1ms)[0m   [0mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2013-05-20 13:36:38) [GET]
+  [4;36;1mLogin Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 10ms (View: 6, DB: 1) | 200 OK [http://localhost/logins/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SignupsController#new (for 127.0.0.1 at 2013-05-20 13:36:40) [GET]
+  [4;35;1mSignup Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `signups`[0m
+Rendering template within layouts/logins
+Rendering signups/new
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/signups/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2013-05-20 13:36:45) [GET]
+Rendering template within layouts/logins
+Rendering page/about
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/page/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#contact (for 127.0.0.1 at 2013-05-20 13:36:46) [GET]
+Rendering template within layouts/logins
+Rendering page/contact
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/page/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2013-05-20 13:36:48) [GET]
+  Parameters: {"id"=>"logout"}
+  [4;36;1mLogin Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://localhost/logins/new/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#contact (for 127.0.0.1 at 2013-05-20 13:36:50) [GET]
+Rendering template within layouts/logins
+Rendering page/contact
+Completed in 39ms (View: 3, DB: 0) | 200 OK [http://localhost/page/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SignupsController#new (for 127.0.0.1 at 2013-05-20 13:36:54) [GET]
+  [4;35;1mSignup Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `signups`[0m
+Rendering template within layouts/logins
+Rendering signups/new
+Completed in 8ms (View: 5, DB: 1) | 200 OK [http://localhost/signups/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SignupsController#create (for 127.0.0.1 at 2013-05-20 13:37:18) [POST]
+  Parameters: {"authenticity_token"=>"esgFeNxHlAVvQEAhAGNQvDYVc+be9ho3KuXtPbsrGLk=", "signup"=>{"phone"=>"1234569787", "password"=>"123456", "name"=>"Pravin", "email"=>"pravinmishra88@gmail.com", "confirm_password"=>"123456"}, "commit"=>"Create"}
+  [4;36;1mSignup Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `signups`[0m
+  [4;35;1mSQL (12.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSignup Load (20.3ms)[0m   [0;1mSELECT `signups`.id FROM `signups` WHERE (`signups`.`email` = BINARY 'pravinmishra88@gmail.com') LIMIT 1[0m
+  [4;35;1mSignup Create (1.0ms)[0m   [0mINSERT INTO `signups` (`updated_at`, `phone`, `created_at`, `password`, `name`, `email`, `confirm_password`) VALUES('2013-05-20 08:07:18', 1234569787, '2013-05-20 08:07:18', '123456', 'Pravin', 'pravinmishra88@gmail.com', '123456')[0m
+  [4;36;1mSQL (88.9ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:4000/signups/1
+Completed in 133ms (DB: 124) | 302 Found [http://localhost/signups]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SignupsController#show (for 127.0.0.1 at 2013-05-20 13:37:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mSignup Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `signups`[0m
+  [4;36;1mSignup Load (0.4ms)[0m   [0;1mSELECT * FROM `signups` WHERE (`signups`.`id` = 1) [0m
+Rendering template within layouts/logins
+Rendering signups/show
+Completed in 18ms (View: 12, DB: 2) | 200 OK [http://localhost/signups/1]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 13:37:24) [GET]
+  [4;35;1mCollection Load (0.2ms)[0m   [0mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2013-05-20 13:37:27) [GET]
+  [4;36;1mLogin Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/logins/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2013-05-20 13:37:30) [GET]
+Rendering template within layouts/logins
+Rendering page/about
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/page/about]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#contact (for 127.0.0.1 at 2013-05-20 13:37:31) [GET]
+Rendering template within layouts/logins
+Rendering page/contact
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/page/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 13:37:32) [GET]
+  [4;35;1mCollection Load (0.1ms)[0m   [0mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 13:37:41) [GET]
+  [4;36;1mCollection Load (0.2ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/collections]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2013-05-20 13:37:45) [GET]
+  Parameters: {"id"=>"logout"}
+  [4;35;1mLogin Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 40ms (View: 3, DB: 1) | 200 OK [http://localhost/logins/new/logout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2013-05-20 13:37:53) [POST]
+  Parameters: {"authenticity_token"=>"esgFeNxHlAVvQEAhAGNQvDYVc+be9ho3KuXtPbsrGLk=", "userform"=>{"password"=>"123456", "email"=>"pravinmishra88@gmail.com"}}
+  [4;36;1mSignup Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `signups`[0m
+  [4;35;1mSignup Load (0.2ms)[0m   [0mSELECT * FROM `signups` WHERE (email = 'pravinmishra88@gmail.com' and password = '123456') LIMIT 1[0m
+Redirected to http://localhost:4000/albums
+Completed in 5ms (DB: 1) | 302 Found [http://localhost/logins]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2013-05-20 13:37:53) [GET]
+  [4;36;1mAlbum Load (0.2ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+Completed in 14ms (View: 6, DB: 0) | 200 OK [http://localhost/albums]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2013-05-20 13:37:58) [GET]
+  [4;35;1mAlbum Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mImage Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `images`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+
+ActionView::TemplateError (undefined method `has_attached_file' for #<Class:0x7f70243a5890>) on line #13 of app/views/albums/new.html.erb:
+10: 
+11: <% form_for(@album, :html => {:multipart => true}) do |f| %>
+12:   <div id="vote_link">
+13:       <%= add_image(f) %>
+14:    </div>   
+15:   <%= f.error_messages %>
+16: 
+
+    app/models/image.rb:4
+    app/helpers/albums_helper.rb:5:in `add_image'
+    app/helpers/albums_helper.rb:4:in `add_image'
+    app/views/albums/new.html.erb:13
+    app/views/albums/new.html.erb:11
+    app/controllers/albums_controller.rb:32:in `new'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW TABLES[0m
+Rendered rescues/_trace (78.0ms)
+Rendered rescues/_request_and_response (20.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 13:38:07) [GET]
+  [4;36;1mCollection Load (0.1ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://localhost/collections]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SignupsController#new (for 127.0.0.1 at 2013-05-20 13:38:09) [GET]
+  [4;35;1mSignup Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `signups`[0m
+Rendering template within layouts/logins
+Rendering signups/new
+Completed in 9ms (View: 5, DB: 1) | 200 OK [http://localhost/signups/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2013-05-20 13:38:11) [GET]
+Rendering template within layouts/logins
+Rendering page/about
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/page/about]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#contact (for 127.0.0.1 at 2013-05-20 13:38:12) [GET]
+Rendering template within layouts/logins
+Rendering page/contact
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/page/contact]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2013-05-20 13:38:13) [GET]
+  Parameters: {"id"=>"logout"}
+  [4;36;1mLogin Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 11ms (View: 7, DB: 1) | 200 OK [http://localhost/logins/new/logout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2013-05-20 13:38:20) [POST]
+  Parameters: {"authenticity_token"=>"esgFeNxHlAVvQEAhAGNQvDYVc+be9ho3KuXtPbsrGLk=", "userform"=>{"password"=>"123456", "email"=>"pravinmishra88@gmail.com"}}
+  [4;35;1mSignup Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `signups`[0m
+  [4;36;1mSignup Load (0.1ms)[0m   [0;1mSELECT * FROM `signups` WHERE (email = 'pravinmishra88@gmail.com' and password = '123456') LIMIT 1[0m
+Redirected to http://localhost:4000/albums
+Completed in 8ms (DB: 1) | 302 Found [http://localhost/logins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2013-05-20 13:38:20) [GET]
+  [4;35;1mAlbum Load (0.1ms)[0m   [0mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://localhost/albums]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#new (for 127.0.0.1 at 2013-05-20 13:38:24) [GET]
+  [4;36;1mAlbum Columns (0.6ms)[0m   [0;1mSHOW FIELDS FROM `albums`[0m
+Rendering template within layouts/logins
+Rendering albums/new
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mImage Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `images`[0m
+  [4;35;1mSQL (2.1ms)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW TABLES[0m
+
+ActionView::TemplateError (undefined method `has_attached_file' for #<Class:0x7f702412b650>) on line #13 of app/views/albums/new.html.erb:
+10: 
+11: <% form_for(@album, :html => {:multipart => true}) do |f| %>
+12:   <div id="vote_link">
+13:       <%= add_image(f) %>
+14:    </div>   
+15:   <%= f.error_messages %>
+16: 
+
+    app/models/image.rb:4
+    app/helpers/albums_helper.rb:5:in `add_image'
+    app/helpers/albums_helper.rb:4:in `add_image'
+    app/views/albums/new.html.erb:13
+    app/views/albums/new.html.erb:11
+    app/controllers/albums_controller.rb:32:in `new'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /home/ubuntu/.rvm/rubies/ruby-1.8.7-p371/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+Rendered rescues/_trace (33.1ms)
+Rendered rescues/_request_and_response (0.2ms)
+Rendering rescues/layout (internal_server_error)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 13:39:22) [GET]
+  [4;35;1mCollection Load (0.1ms)[0m   [0mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 13:44:33) [GET]
+  [4;36;1mCollection Load (0.2ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 18ms (View: 15, DB: 0) | 200 OK [http://localhost/collections]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#about (for 127.0.0.1 at 2013-05-20 13:44:35) [GET]
+Rendering template within layouts/logins
+Rendering page/about
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/page/about]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PageController#contact (for 127.0.0.1 at 2013-05-20 13:44:36) [GET]
+Rendering template within layouts/logins
+Rendering page/contact
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://localhost/page/contact]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 13:44:39) [GET]
+  [4;35;1mCollection Load (0.2ms)[0m   [0mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 15:03:37) [GET]
+  [4;36;1mCollection Load (0.2ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 21ms (View: 17, DB: 0) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 15:03:39) [GET]
+  [4;35;1mCollection Load (0.2ms)[0m   [0mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/collections]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CollectionsController#index (for 127.0.0.1 at 2013-05-20 15:03:41) [GET]
+  [4;36;1mCollection Load (0.1ms)[0m   [0;1mSELECT * FROM `collections` [0m
+Rendering template within layouts/logins
+Rendering collections/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://localhost/collections]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#new (for 127.0.0.1 at 2013-05-20 15:03:45) [GET]
+  Parameters: {"id"=>"logout"}
+  [4;35;1mLogin Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `logins`[0m
+Rendering template within layouts/logins
+Rendering logins/new
+Completed in 10ms (View: 7, DB: 1) | 200 OK [http://localhost/logins/new/logout]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing LoginsController#create (for 127.0.0.1 at 2013-05-20 15:03:57) [POST]
+  Parameters: {"authenticity_token"=>"esgFeNxHlAVvQEAhAGNQvDYVc+be9ho3KuXtPbsrGLk=", "userform"=>{"password"=>"123456", "email"=>"pravinmishra88@gmail.com"}}
+  [4;36;1mSignup Columns (0.5ms)[0m   [0;1mSHOW FIELDS FROM `signups`[0m
+  [4;35;1mSignup Load (0.1ms)[0m   [0mSELECT * FROM `signups` WHERE (email = 'pravinmishra88@gmail.com' and password = '123456') LIMIT 1[0m
+Redirected to http://localhost:4000/albums
+Completed in 6ms (DB: 1) | 302 Found [http://localhost/logins]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AlbumsController#index (for 127.0.0.1 at 2013-05-20 15:03:57) [GET]
+  [4;36;1mAlbum Load (0.1ms)[0m   [0;1mSELECT * FROM `albums` [0m
+Rendering template within layouts/logins
+Rendering albums/index
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://localhost/albums]
